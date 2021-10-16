@@ -145,4 +145,137 @@ if(keypressed == '67')
     console.log("c");
 }
 
+if(keypressed == '65')
+{
+    new_image("Ancient Debris.png");
+    console.log("a");
+}
+
+if(keypressed == '88')
+{
+    new_image("Netherite Block.jpg");
+    console.log("x");
+}
+
+if(keypressed == '66')
+{
+    new_image("Diamond Block.png");
+    console.log("b");
+}
+
+if(keypressed == '90')
+{
+    new_image("Gold Block.png");
+    console.log("z");
+}
+
+if(keypressed == '69')
+{
+    new_image("Nether Brick.png");
+    console.log("e");
+}
+
+if(keypressed == '70')
+{
+    new_image("Leaf Block.png");
+    console.log("f");
+}
+
+if(keypressed == '72')
+{
+    new_image("Warped Block.png");
+    console.log("h");
+}
+
+if(keypressed == '73')
+{
+    new_image("Blackstone Block.png");
+    console.log("i");
+}
+
+if(keypressed == '74')
+{
+    new_image("Obsidian Block.png");
+    console.log("j");
+}
+
+if(keypressed == '75')
+{
+    new_image("Crying Obsidian Block.png");
+    console.log("k");
+}
+
+if(keypressed == '86')
+{
+    new_image("Glowstone Block.jpg");
+    console.log("v");
+}
+
+if(keypressed == '79')
+{
+    new_image("Emerald Block.png");
+    console.log("o");
+}
+
+if(keypressed == '78')
+{
+    new_image("End City Block.png");
+    console.log("n");
+}
+
+if(keypressed == '83')
+{
+    new_image("End Stone Block.png");
+    console.log("s");
+}
+
+if(keypressed == '81')
+{
+    new_image("Magma Block.jpg");
+    console.log("q");
+}
+}
+
+function up() {
+if(player_y>= 0)
+{
+    player_y= player_y - block_image_height;
+    console.log("block_image_height=" + block_image_height);
+    console.log("when up arrow key is pressed, x= " + player_x +", y= "+ player_y);
+    canvas.remove(player_object);
+    player_update();
+}
+}
+
+function down() {
+if(player_y<=500)
+{
+    player_y= player_y + block_image_height;
+    console.log("block_image_height=" + block_image_height);
+    console.log("when down arrow key is pressed, x= " + player_x + ", y= " + player_y);
+    canvas.remove(player_object);
+    player_update();
+}
+}
+
+function left() {
+if(player_x>= 0)
+{
+    player_x= player_x - block_image_width;
+    console.log("block_image_width= " + block_image_width);
+    console.log("when left arrow key is pressed, x= " + player_x + ", y= " + player_y);
+    canvas.remove(player_object);
+    player_update();
+}
+}
+
+function right() {
+if(player_x<=850)
+{
+    player_x= player_x + block_image_width;
+    console.log("block_image_width= " + block_image_width);
+    console.log("when right arrow key is pressed, x= " + player_x + ", y= " + player_y);
+    canvas.remove(player_object);
+    player_update();
+}
 }
